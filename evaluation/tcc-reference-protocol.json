@@ -1,0 +1,59 @@
+{
+  "schema": "tcc-reference-protocol/v1",
+  "issue": 18,
+  "parent_issue": 17,
+  "approval": {
+    "sample_and_protocol": "approved_by_user_in_session_2026-09-26",
+    "derived_pts": "approved_by_user_in_session_2026-09-26",
+    "annotation_review": "completed_by_user_in_session_2026-09-26"
+  },
+  "source": {
+    "dataset": "SoccerNet/SN-GSR-2024",
+    "revision": "3cc710eb6d53a23350a3d2863311c1c0a2e645d7",
+    "split": "test",
+    "archive_sha256": "ac40080fadaebf3474477889576662de7970cae0cb375d7cd22d96f49aeefbfd"
+  },
+  "frame_rate": 25,
+  "window": {
+    "start": 251,
+    "end": 500,
+    "sample_step": 5,
+    "review_frames": [251, 276, 301, 326, 351, 376, 401, 426, 451, 476]
+  },
+  "matching": {
+    "iou_threshold": 0.5,
+    "algorithm": "maximum-cardinality-maximum-sum-iou-bipartite",
+    "tie_break": "lexicographically-smallest-reference-source-annotation-id-prediction-ordinal"
+  },
+  "smoothing": {
+    "variant": "smooth-only-savgol-5f-degree-2-25fps",
+    "coordinate": "metric-support-point",
+    "segment": "contiguous-valid-same-local-id-metric-observations",
+    "window_frames": 5,
+    "degree": 2,
+    "edge_policy": "unchanged",
+    "gap_filling": "forbidden",
+    "id_merging": "forbidden",
+    "max_candidate_displacement_m": 0.5
+  },
+  "clips": [
+    {
+      "id": "SNGS-116",
+      "game_id": "7",
+      "source_manifest_sha256": "d64e04217bc9a1e28af567d48f6c2074906c685e2b56073080b125162dbedf15",
+      "labels_sha256": "d0b1eb05ec23247a8512556f0de239488507b4228d412ba6dc244d3acaafdfe0"
+    },
+    {
+      "id": "SNGS-132",
+      "game_id": "8",
+      "source_manifest_sha256": "33150be02925b04fe75228436fbcfed742c1d9ce40d6ca71bbc796258bb7c1a8",
+      "labels_sha256": "dfbb7d62e2f26aa1183d8c12d299e2a2256fac2dc408d7580a9293109952edad"
+    },
+    {
+      "id": "SNGS-187",
+      "game_id": "11",
+      "source_manifest_sha256": "0cc2a674df27437dce2e30af78a666913736532d3853b1c646810d16a3d57bdb",
+      "labels_sha256": "35381c56274524da4686a1255eccd044512c01b25ec939f11f62daa431551e4e"
+    }
+  ]
+}

@@ -1,0 +1,673 @@
+{
+  "schema": "tcc-identity-evaluation/v1",
+  "issue": 20,
+  "protocol_sha256": "42a3dc72067ce754c847afd410faaa9f6e10adc849806ccf1c83eaf399165c64",
+  "reference_sha256": "0ac41da846eaa13e4971e7170c88de4fb73b1e3067c12e20485b3fb6dd43df33",
+  "review_sha256": "9d37c8a25088a75dd77e52a8ac721d59f0c89b0b3f325a1e4b651c9721909ba0",
+  "frame_rate": 25,
+  "evaluation_fps": 5,
+  "time_semantics": "derived_25fps_not_broadcast_pts",
+  "matching": {
+    "iou_threshold": 0.5,
+    "algorithm": "maximum-cardinality-maximum-sum-iou-bipartite",
+    "tie_break": "lexicographically-smallest-reference-source-annotation-id-prediction-ordinal"
+  },
+  "evaluator": {
+    "package": "motmetrics",
+    "version": "1.4.0"
+  },
+  "clips": [
+    {
+      "clip": "SNGS-116",
+      "metrics": {
+        "sampled_frames": 50,
+        "reference_people": 676,
+        "matched": 634,
+        "missed": 42,
+        "false_positives": 13,
+        "detection_coverage": 0.9378698224852071,
+        "player_goalkeeper": {
+          "reference_people": 654,
+          "matched": 612,
+          "coverage": 0.9357798165137615
+        },
+        "distractor_labels": 46,
+        "ignored_regions": 0,
+        "reference_local_ids": 18,
+        "predicted_local_ids": 20,
+        "idf1": 0.8994708994708994,
+        "idtp": 595,
+        "idfp": 52,
+        "idfn": 81,
+        "id_switches": 10,
+        "fragmentations": 12,
+        "per_reference_identity": {
+          "1": {
+            "reference_samples": 14,
+            "matched_samples": 13,
+            "coverage": 0.9285714285714286,
+            "predicted_local_ids": [
+              18
+            ]
+          },
+          "3": {
+            "reference_samples": 20,
+            "matched_samples": 19,
+            "coverage": 0.95,
+            "predicted_local_ids": [
+              1
+            ]
+          },
+          "4": {
+            "reference_samples": 22,
+            "matched_samples": 22,
+            "coverage": 1.0,
+            "predicted_local_ids": [
+              16
+            ]
+          },
+          "5": {
+            "reference_samples": 22,
+            "matched_samples": 21,
+            "coverage": 0.9545454545454546,
+            "predicted_local_ids": [
+              17
+            ]
+          },
+          "6": {
+            "reference_samples": 50,
+            "matched_samples": 48,
+            "coverage": 0.96,
+            "predicted_local_ids": [
+              4
+            ]
+          },
+          "7": {
+            "reference_samples": 48,
+            "matched_samples": 47,
+            "coverage": 0.9791666666666666,
+            "predicted_local_ids": [
+              7
+            ]
+          },
+          "8": {
+            "reference_samples": 50,
+            "matched_samples": 44,
+            "coverage": 0.88,
+            "predicted_local_ids": [
+              2,
+              8,
+              20
+            ]
+          },
+          "9": {
+            "reference_samples": 31,
+            "matched_samples": 28,
+            "coverage": 0.9032258064516129,
+            "predicted_local_ids": [
+              11
+            ]
+          },
+          "10": {
+            "reference_samples": 50,
+            "matched_samples": 47,
+            "coverage": 0.94,
+            "predicted_local_ids": [
+              5
+            ]
+          },
+          "11": {
+            "reference_samples": 33,
+            "matched_samples": 31,
+            "coverage": 0.9393939393939394,
+            "predicted_local_ids": [
+              11,
+              14
+            ]
+          },
+          "12": {
+            "reference_samples": 50,
+            "matched_samples": 48,
+            "coverage": 0.96,
+            "predicted_local_ids": [
+              10,
+              15
+            ]
+          },
+          "13": {
+            "reference_samples": 41,
+            "matched_samples": 35,
+            "coverage": 0.8536585365853658,
+            "predicted_local_ids": [
+              8,
+              10,
+              15
+            ]
+          },
+          "14": {
+            "reference_samples": 24,
+            "matched_samples": 21,
+            "coverage": 0.875,
+            "predicted_local_ids": [
+              13
+            ]
+          },
+          "15": {
+            "reference_samples": 38,
+            "matched_samples": 37,
+            "coverage": 0.9736842105263158,
+            "predicted_local_ids": [
+              8,
+              12
+            ]
+          },
+          "16": {
+            "reference_samples": 47,
+            "matched_samples": 45,
+            "coverage": 0.9574468085106383,
+            "predicted_local_ids": [
+              6
+            ]
+          },
+          "17": {
+            "reference_samples": 36,
+            "matched_samples": 35,
+            "coverage": 0.9722222222222222,
+            "predicted_local_ids": [
+              3
+            ]
+          },
+          "18": {
+            "reference_samples": 50,
+            "matched_samples": 48,
+            "coverage": 0.96,
+            "predicted_local_ids": [
+              4,
+              9
+            ]
+          },
+          "19": {
+            "reference_samples": 50,
+            "matched_samples": 45,
+            "coverage": 0.9,
+            "predicted_local_ids": [
+              12,
+              19
+            ]
+          }
+        }
+      },
+      "examples": {
+        "loss": "loss-frame-251.jpg",
+        "switch": "switch-frame-266.jpg"
+      },
+      "input_sha256": {
+        "source_video": "5941467e1b9e9aabd68b3c7c654d4ef38fe6d45b62407d0cf0a8831b70d335c4",
+        "tracking_jsonl": "8298a96f6588af04b68be5464fe3aff0ac45c0001227491bfbb7e4a8cfb4269c",
+        "tracking_summary": "0d2c90cbbb72c5ecbada3af1a41dfb3b2d1d3c35d8f83c072bd31c7030c8577c"
+      }
+    },
+    {
+      "clip": "SNGS-132",
+      "metrics": {
+        "sampled_frames": 50,
+        "reference_people": 758,
+        "matched": 610,
+        "missed": 148,
+        "false_positives": 86,
+        "detection_coverage": 0.8047493403693932,
+        "player_goalkeeper": {
+          "reference_people": 710,
+          "matched": 587,
+          "coverage": 0.8267605633802817
+        },
+        "distractor_labels": 50,
+        "ignored_regions": 0,
+        "reference_local_ids": 24,
+        "predicted_local_ids": 28,
+        "idf1": 0.7922971114167813,
+        "idtp": 576,
+        "idfp": 120,
+        "idfn": 182,
+        "id_switches": 8,
+        "fragmentations": 38,
+        "per_reference_identity": {
+          "1": {
+            "reference_samples": 28,
+            "matched_samples": 23,
+            "coverage": 0.8214285714285714,
+            "predicted_local_ids": [
+              3,
+              17
+            ]
+          },
+          "2": {
+            "reference_samples": 20,
+            "matched_samples": 0,
+            "coverage": 0.0,
+            "predicted_local_ids": []
+          },
+          "3": {
+            "reference_samples": 49,
+            "matched_samples": 47,
+            "coverage": 0.9591836734693877,
+            "predicted_local_ids": [
+              1,
+              15
+            ]
+          },
+          "4": {
+            "reference_samples": 50,
+            "matched_samples": 49,
+            "coverage": 0.98,
+            "predicted_local_ids": [
+              2
+            ]
+          },
+          "5": {
+            "reference_samples": 50,
+            "matched_samples": 45,
+            "coverage": 0.9,
+            "predicted_local_ids": [
+              4
+            ]
+          },
+          "6": {
+            "reference_samples": 50,
+            "matched_samples": 44,
+            "coverage": 0.88,
+            "predicted_local_ids": [
+              6
+            ]
+          },
+          "7": {
+            "reference_samples": 24,
+            "matched_samples": 21,
+            "coverage": 0.875,
+            "predicted_local_ids": [
+              17,
+              18
+            ]
+          },
+          "8": {
+            "reference_samples": 50,
+            "matched_samples": 48,
+            "coverage": 0.96,
+            "predicted_local_ids": [
+              7,
+              10
+            ]
+          },
+          "9": {
+            "reference_samples": 19,
+            "matched_samples": 4,
+            "coverage": 0.21052631578947367,
+            "predicted_local_ids": [
+              26,
+              28
+            ]
+          },
+          "10": {
+            "reference_samples": 20,
+            "matched_samples": 17,
+            "coverage": 0.85,
+            "predicted_local_ids": [
+              5,
+              19
+            ]
+          },
+          "11": {
+            "reference_samples": 48,
+            "matched_samples": 39,
+            "coverage": 0.8125,
+            "predicted_local_ids": [
+              11,
+              27
+            ]
+          },
+          "12": {
+            "reference_samples": 14,
+            "matched_samples": 9,
+            "coverage": 0.6428571428571429,
+            "predicted_local_ids": [
+              25
+            ]
+          },
+          "13": {
+            "reference_samples": 50,
+            "matched_samples": 44,
+            "coverage": 0.88,
+            "predicted_local_ids": [
+              7,
+              10
+            ]
+          },
+          "14": {
+            "reference_samples": 19,
+            "matched_samples": 4,
+            "coverage": 0.21052631578947367,
+            "predicted_local_ids": [
+              26
+            ]
+          },
+          "15": {
+            "reference_samples": 50,
+            "matched_samples": 35,
+            "coverage": 0.7,
+            "predicted_local_ids": [
+              13
+            ]
+          },
+          "17": {
+            "reference_samples": 40,
+            "matched_samples": 33,
+            "coverage": 0.825,
+            "predicted_local_ids": [
+              8
+            ]
+          },
+          "18": {
+            "reference_samples": 50,
+            "matched_samples": 48,
+            "coverage": 0.96,
+            "predicted_local_ids": [
+              9
+            ]
+          },
+          "19": {
+            "reference_samples": 38,
+            "matched_samples": 33,
+            "coverage": 0.868421052631579,
+            "predicted_local_ids": [
+              12
+            ]
+          },
+          "20": {
+            "reference_samples": 29,
+            "matched_samples": 27,
+            "coverage": 0.9310344827586207,
+            "predicted_local_ids": [
+              14
+            ]
+          },
+          "21": {
+            "reference_samples": 6,
+            "matched_samples": 4,
+            "coverage": 0.6666666666666666,
+            "predicted_local_ids": [
+              16
+            ]
+          },
+          "22": {
+            "reference_samples": 16,
+            "matched_samples": 11,
+            "coverage": 0.6875,
+            "predicted_local_ids": [
+              21
+            ]
+          },
+          "23": {
+            "reference_samples": 15,
+            "matched_samples": 14,
+            "coverage": 0.9333333333333333,
+            "predicted_local_ids": [
+              23
+            ]
+          },
+          "24": {
+            "reference_samples": 13,
+            "matched_samples": 11,
+            "coverage": 0.8461538461538461,
+            "predicted_local_ids": [
+              24
+            ]
+          },
+          "25": {
+            "reference_samples": 10,
+            "matched_samples": 0,
+            "coverage": 0.0,
+            "predicted_local_ids": []
+          }
+        }
+      },
+      "examples": {
+        "loss": "loss-frame-251.jpg",
+        "switch": "switch-frame-301.jpg"
+      },
+      "input_sha256": {
+        "source_video": "c055c8fb9a1676ca8f669d6f503de3d665223130f0d8fb9e3337f31c720fb565",
+        "tracking_jsonl": "580c5c82b562998050ca134e192d56601bfc16e1eae7ba0410dd68a4169109c2",
+        "tracking_summary": "4e1cfab71ce75439722126eed64d1a15bd70bf56e4c921ca68cd3d7a881bc4da"
+      }
+    },
+    {
+      "clip": "SNGS-187",
+      "metrics": {
+        "sampled_frames": 50,
+        "reference_people": 959,
+        "matched": 881,
+        "missed": 78,
+        "false_positives": 18,
+        "detection_coverage": 0.9186652763295099,
+        "player_goalkeeper": {
+          "reference_people": 895,
+          "matched": 833,
+          "coverage": 0.9307262569832402
+        },
+        "distractor_labels": 50,
+        "ignored_regions": 0,
+        "reference_local_ids": 23,
+        "predicted_local_ids": 24,
+        "idf1": 0.813778256189451,
+        "idtp": 756,
+        "idfp": 143,
+        "idfn": 203,
+        "id_switches": 14,
+        "fragmentations": 20,
+        "per_reference_identity": {
+          "1": {
+            "reference_samples": 50,
+            "matched_samples": 41,
+            "coverage": 0.82,
+            "predicted_local_ids": [
+              17,
+              18
+            ]
+          },
+          "2": {
+            "reference_samples": 50,
+            "matched_samples": 48,
+            "coverage": 0.96,
+            "predicted_local_ids": [
+              10
+            ]
+          },
+          "4": {
+            "reference_samples": 50,
+            "matched_samples": 47,
+            "coverage": 0.94,
+            "predicted_local_ids": [
+              17,
+              18
+            ]
+          },
+          "5": {
+            "reference_samples": 50,
+            "matched_samples": 49,
+            "coverage": 0.98,
+            "predicted_local_ids": [
+              4
+            ]
+          },
+          "6": {
+            "reference_samples": 50,
+            "matched_samples": 46,
+            "coverage": 0.92,
+            "predicted_local_ids": [
+              10,
+              14
+            ]
+          },
+          "7": {
+            "reference_samples": 50,
+            "matched_samples": 48,
+            "coverage": 0.96,
+            "predicted_local_ids": [
+              6,
+              13
+            ]
+          },
+          "8": {
+            "reference_samples": 50,
+            "matched_samples": 47,
+            "coverage": 0.94,
+            "predicted_local_ids": [
+              9
+            ]
+          },
+          "9": {
+            "reference_samples": 50,
+            "matched_samples": 49,
+            "coverage": 0.98,
+            "predicted_local_ids": [
+              1
+            ]
+          },
+          "10": {
+            "reference_samples": 47,
+            "matched_samples": 46,
+            "coverage": 0.9787234042553191,
+            "predicted_local_ids": [
+              2
+            ]
+          },
+          "11": {
+            "reference_samples": 3,
+            "matched_samples": 0,
+            "coverage": 0.0,
+            "predicted_local_ids": []
+          },
+          "12": {
+            "reference_samples": 41,
+            "matched_samples": 37,
+            "coverage": 0.9024390243902439,
+            "predicted_local_ids": [
+              11,
+              22
+            ]
+          },
+          "13": {
+            "reference_samples": 31,
+            "matched_samples": 21,
+            "coverage": 0.6774193548387096,
+            "predicted_local_ids": [
+              19,
+              23
+            ]
+          },
+          "14": {
+            "reference_samples": 50,
+            "matched_samples": 49,
+            "coverage": 0.98,
+            "predicted_local_ids": [
+              5,
+              21
+            ]
+          },
+          "15": {
+            "reference_samples": 50,
+            "matched_samples": 49,
+            "coverage": 0.98,
+            "predicted_local_ids": [
+              6,
+              13
+            ]
+          },
+          "16": {
+            "reference_samples": 50,
+            "matched_samples": 47,
+            "coverage": 0.94,
+            "predicted_local_ids": [
+              8
+            ]
+          },
+          "17": {
+            "reference_samples": 11,
+            "matched_samples": 6,
+            "coverage": 0.5454545454545454,
+            "predicted_local_ids": [
+              24
+            ]
+          },
+          "18": {
+            "reference_samples": 50,
+            "matched_samples": 49,
+            "coverage": 0.98,
+            "predicted_local_ids": [
+              12
+            ]
+          },
+          "19": {
+            "reference_samples": 50,
+            "matched_samples": 49,
+            "coverage": 0.98,
+            "predicted_local_ids": [
+              15
+            ]
+          },
+          "20": {
+            "reference_samples": 42,
+            "matched_samples": 39,
+            "coverage": 0.9285714285714286,
+            "predicted_local_ids": [
+              3,
+              16,
+              21
+            ]
+          },
+          "21": {
+            "reference_samples": 48,
+            "matched_samples": 47,
+            "coverage": 0.9791666666666666,
+            "predicted_local_ids": [
+              7
+            ]
+          },
+          "22": {
+            "reference_samples": 50,
+            "matched_samples": 47,
+            "coverage": 0.94,
+            "predicted_local_ids": [
+              3,
+              5,
+              21
+            ]
+          },
+          "23": {
+            "reference_samples": 22,
+            "matched_samples": 20,
+            "coverage": 0.9090909090909091,
+            "predicted_local_ids": [
+              20
+            ]
+          },
+          "24": {
+            "reference_samples": 14,
+            "matched_samples": 0,
+            "coverage": 0.0,
+            "predicted_local_ids": []
+          }
+        }
+      },
+      "examples": {
+        "loss": "loss-frame-251.jpg",
+        "switch": "switch-frame-276.jpg"
+      },
+      "input_sha256": {
+        "source_video": "5fb7c399a834752d043dbc48548b773feb01b57c65b3bcdbdfdbac1f273c7e7b",
+        "tracking_jsonl": "d1e5a022903392ff767f23d354d0fd5cc2df7f552bf64e26b9132d0bc77dd7ac",
+        "tracking_summary": "b4a0d4bdd8ee74e6694382d82b8922faa33f714f3424865424ee093c8324bd63"
+      }
+    }
+  ]
+}

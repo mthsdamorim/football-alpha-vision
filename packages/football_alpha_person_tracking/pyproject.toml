@@ -1,0 +1,28 @@
+[project]
+name = "football-alpha-person-tracking"
+version = "0.1.0"
+description = "Session-local person tracking contracts for football-alpha."
+requires-python = ">=3.13"
+dependencies = [
+    "av>=18.1.0,<19.0.0",
+    "football-alpha-pitch-projection",
+    "football-alpha-player-detection",
+    "football-alpha-video",
+    "numpy>=2.3.0",
+    "opencv-python-headless>=4.8.0,<5.0.0",
+    "scipy>=1.14.0,<2.0.0",
+    "supervision>=0.30.0,<0.31.0",
+    "trackers>=2.6,<3",
+]
+
+[project.scripts]
+football-alpha-person-tracking = "football_alpha_person_tracking.cli:main"
+
+[tool.uv.sources]
+football-alpha-pitch-projection = { workspace = true }
+football-alpha-player-detection = { workspace = true }
+football-alpha-video = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"

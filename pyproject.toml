@@ -1,0 +1,79 @@
+[project]
+name = "football-alpha"
+version = "0.1.0"
+description = "Detecção, tracking e calibração de câmera em transmissões de futebol (TCC de Visão Computacional)."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=6.0",
+    "pyright>=1.1",
+    "ruff>=0.12",
+    "motmetrics==1.4.0",
+]
+
+[tool.uv]
+package = false
+exclude-dependencies = [
+    "opencv-python",
+]
+
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.ruff]
+line-length = 88
+src = ["packages", "tests"]
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "RUF", "SIM", "UP"]
+
+[tool.pyright]
+include = ["packages", "tests"]
+pythonVersion = "3.13"
+typeCheckingMode = "strict"
+venv = ".venv"
+venvPath = "."
+
+[tool.pytest.ini_options]
+addopts = [
+    "-ra",
+    "--strict-config",
+    "--strict-markers",
+    "--cov=football_alpha_video",
+    "--cov=football_alpha_player_detection",
+    "--cov=football_alpha_person_tracking",
+    "--cov=football_alpha_pitch_projection",
+    "--cov-branch",
+    "--cov-report=term-missing",
+    "--cov-report=xml",
+    "--cov-fail-under=100",
+]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+omit = [
+    "packages/football_alpha_person_tracking/src/football_alpha_person_tracking/__main__.py",
+    "packages/football_alpha_player_detection/src/football_alpha_player_detection/__main__.py",
+    "packages/football_alpha_video/src/football_alpha_video/__main__.py",
+]
+source = [
+    "football_alpha_person_tracking",
+    "football_alpha_pitch_projection",
+    "football_alpha_player_detection",
+    "football_alpha_video",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

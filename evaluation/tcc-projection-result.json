@@ -1,0 +1,300 @@
+{
+  "schema": "tcc-projection-evaluation/v1",
+  "issue": 19,
+  "protocol_sha256": "42a3dc72067ce754c847afd410faaa9f6e10adc849806ccf1c83eaf399165c64",
+  "reference_sha256": "0ac41da846eaa13e4971e7170c88de4fb73b1e3067c12e20485b3fb6dd43df33",
+  "review_sha256": "9d37c8a25088a75dd77e52a8ac721d59f0c89b0b3f325a1e4b651c9721909ba0",
+  "time_semantics": "derived_25fps_not_broadcast_pts",
+  "metre_claim": "descriptive_agreement_with_gsr_derived_reference_only",
+  "variant": "smooth-only-savgol-5f-degree-2-25fps",
+  "clips": [
+    {
+      "clip": "SNGS-116",
+      "source_frames": 250,
+      "sampled_frames": 50,
+      "camera_accepted_all_frames": 250,
+      "reference_camera_available_sampled_frames": 50,
+      "camera_accepted_sampled_frames": 50,
+      "sampled_line_frames_with_error": 10,
+      "line_error_px": {
+        "count": 49,
+        "median": 2.6396224552765606,
+        "p90": 6.250768845638006,
+        "maximum": 11.527086808163638
+      },
+      "observations_all_frames": 3263,
+      "projected_all_frames": 3263,
+      "outside_pitch_projected_all_frames": 4,
+      "metric_eligible_reviewed_people": 138,
+      "metric_matched_reviewed_people": 119,
+      "metric_projected_reviewed_people": 119,
+      "reviewed_reference_people": 139,
+      "reviewed_edge_truncated_people": 1,
+      "reviewed_people_without_reference_camera": 0,
+      "jitter_original_m": {
+        "count": 3215,
+        "median": 0.3463511930252043,
+        "p90": 1.2308850534635771,
+        "maximum": 9.27356249388563
+      },
+      "jitter_smoothed_m": {
+        "count": 3215,
+        "median": 0.1652671436857486,
+        "p90": 1.0975799513154885,
+        "maximum": 9.27356249388563
+      },
+      "metric": {
+        "camera_only_error_m": {
+          "count": 119,
+          "median": 0.8011261243774669,
+          "p90": 2.114276600191874,
+          "maximum": 5.041147695159352
+        },
+        "combined_original_error_m": {
+          "count": 119,
+          "median": 0.8244189627015457,
+          "p90": 2.279817654695395,
+          "maximum": 4.643996473290126
+        },
+        "combined_smoothed_error_m": {
+          "count": 119,
+          "median": 0.7262389254001611,
+          "p90": 2.226259771399774,
+          "maximum": 4.643996473290126
+        },
+        "support_error_px": {
+          "count": 119,
+          "median": 4.888418248585601,
+          "p90": 12.061992349013051,
+          "maximum": 35.89693573683984
+        },
+        "smoothing_displacement_m": {
+          "count": 119,
+          "median": 0.1320760654554432,
+          "p90": 0.30424747600765856,
+          "maximum": 0.48737872691410977
+        }
+      },
+      "smoothing_error_change": {
+        "paired_count": 119,
+        "worsened_count": 41,
+        "improved_count": 59,
+        "unchanged_count": 19,
+        "maximum_worsening_m": 0.3249319232557468,
+        "delta_m": {
+          "count": 119,
+          "median": 0.0,
+          "p90": 0.12248901538873817,
+          "maximum": 0.3249319232557468
+        }
+      },
+      "original_metric_gaps": {
+        "intervals": 4,
+        "missing_frames": 6
+      },
+      "gaps_filled": 0,
+      "smoothing_rejected_observations": 580,
+      "sampled_observations": 647,
+      "input_sha256": {
+        "source": "5941467e1b9e9aabd68b3c7c654d4ef38fe6d45b62407d0cf0a8831b70d335c4",
+        "tracking_jsonl": "8298a96f6588af04b68be5464fe3aff0ac45c0001227491bfbb7e4a8cfb4269c",
+        "tracking_summary": "0d2c90cbbb72c5ecbada3af1a41dfb3b2d1d3c35d8f83c072bd31c7030c8577c",
+        "camera_jsonl": "327d8f8f1853151923634b7b9058532bc416da4acedf09c471ae3a266bfb4650",
+        "camera_summary": "d4831cc9d1126ed6877a0cd25e5f54da8c17f274a8eab327f6859ba818e25b7f",
+        "camera_video": "178cb2318f125a69a1f02a51bdbecb0ec2c786bd30bc65bdabe31fc700f9d2e1"
+      }
+    },
+    {
+      "clip": "SNGS-132",
+      "source_frames": 250,
+      "sampled_frames": 50,
+      "camera_accepted_all_frames": 250,
+      "reference_camera_available_sampled_frames": 49,
+      "camera_accepted_sampled_frames": 50,
+      "sampled_line_frames_with_error": 10,
+      "line_error_px": {
+        "count": 24,
+        "median": 3.8056014580118815,
+        "p90": 11.342115779512708,
+        "maximum": 20.352947153351764
+      },
+      "observations_all_frames": 3543,
+      "projected_all_frames": 3543,
+      "outside_pitch_projected_all_frames": 202,
+      "metric_eligible_reviewed_people": 143,
+      "metric_matched_reviewed_people": 91,
+      "metric_projected_reviewed_people": 91,
+      "reviewed_reference_people": 149,
+      "reviewed_edge_truncated_people": 6,
+      "reviewed_people_without_reference_camera": 0,
+      "jitter_original_m": {
+        "count": 3487,
+        "median": 0.45926002991175,
+        "p90": 3.9258209412299068,
+        "maximum": 212.02103269401428
+      },
+      "jitter_smoothed_m": {
+        "count": 3487,
+        "median": 0.24541291403375778,
+        "p90": 3.9366690114308094,
+        "maximum": 212.02103269401428
+      },
+      "metric": {
+        "camera_only_error_m": {
+          "count": 91,
+          "median": 0.7901141092692741,
+          "p90": 3.5056591774852506,
+          "maximum": 5.669494241425301
+        },
+        "combined_original_error_m": {
+          "count": 91,
+          "median": 0.8928904740887376,
+          "p90": 3.6244467781939873,
+          "maximum": 5.739378583230402
+        },
+        "combined_smoothed_error_m": {
+          "count": 91,
+          "median": 0.675485859802605,
+          "p90": 3.8243907611348407,
+          "maximum": 5.739378583230402
+        },
+        "support_error_px": {
+          "count": 91,
+          "median": 7.110068294235545,
+          "p90": 14.057512687461646,
+          "maximum": 19.867988229420245
+        },
+        "smoothing_displacement_m": {
+          "count": 91,
+          "median": 0.0,
+          "p90": 0.3749304503029475,
+          "maximum": 0.49180650596113545
+        }
+      },
+      "smoothing_error_change": {
+        "paired_count": 91,
+        "worsened_count": 15,
+        "improved_count": 30,
+        "unchanged_count": 46,
+        "maximum_worsening_m": 0.24242283402399867,
+        "delta_m": {
+          "count": 91,
+          "median": 0.0,
+          "p90": 0.08307662788803616,
+          "maximum": 0.24242283402399867
+        }
+      },
+      "original_metric_gaps": {
+        "intervals": 0,
+        "missing_frames": 0
+      },
+      "gaps_filled": 0,
+      "smoothing_rejected_observations": 1325,
+      "sampled_observations": 696,
+      "input_sha256": {
+        "source": "c055c8fb9a1676ca8f669d6f503de3d665223130f0d8fb9e3337f31c720fb565",
+        "tracking_jsonl": "580c5c82b562998050ca134e192d56601bfc16e1eae7ba0410dd68a4169109c2",
+        "tracking_summary": "4e1cfab71ce75439722126eed64d1a15bd70bf56e4c921ca68cd3d7a881bc4da",
+        "camera_jsonl": "829e8f19adca0cb1770479aad5d12c180e23f105efdd8a1387e60e322597316c",
+        "camera_summary": "15176c232635c159ce32bf0549fcbb2b85b9f0a901cd7422a8d0eec84c62e84b",
+        "camera_video": "705d31a1d3cb0564e9ffb9fc792a1df9043f15e78c7d8579397d655425d62296"
+      }
+    },
+    {
+      "clip": "SNGS-187",
+      "source_frames": 250,
+      "sampled_frames": 50,
+      "camera_accepted_all_frames": 208,
+      "reference_camera_available_sampled_frames": 47,
+      "camera_accepted_sampled_frames": 42,
+      "sampled_line_frames_with_error": 8,
+      "line_error_px": {
+        "count": 16,
+        "median": 3.2737723218770984,
+        "p90": 140.03663559109108,
+        "maximum": 336.72740041218503
+      },
+      "observations_all_frames": 4560,
+      "projected_all_frames": 3815,
+      "outside_pitch_projected_all_frames": 214,
+      "metric_eligible_reviewed_people": 175,
+      "metric_matched_reviewed_people": 143,
+      "metric_projected_reviewed_people": 126,
+      "reviewed_reference_people": 193,
+      "reviewed_edge_truncated_people": 0,
+      "reviewed_people_without_reference_camera": 18,
+      "jitter_original_m": {
+        "count": 3695,
+        "median": 0.2893852369078085,
+        "p90": 3.8738789623502394,
+        "maximum": 3111.8783165594145
+      },
+      "jitter_smoothed_m": {
+        "count": 3695,
+        "median": 0.1406230789598772,
+        "p90": 3.92382336706345,
+        "maximum": 3111.8783165594145
+      },
+      "metric": {
+        "camera_only_error_m": {
+          "count": 126,
+          "median": 0.5599255470460792,
+          "p90": 18.64305218843649,
+          "maximum": 2904.248700703075
+        },
+        "combined_original_error_m": {
+          "count": 126,
+          "median": 0.5808037160184685,
+          "p90": 19.195347356430762,
+          "maximum": 1977.0170688763442
+        },
+        "combined_smoothed_error_m": {
+          "count": 126,
+          "median": 0.5579429267846217,
+          "p90": 19.195347356430762,
+          "maximum": 1977.0170688763442
+        },
+        "support_error_px": {
+          "count": 143,
+          "median": 4.974379679465822,
+          "p90": 9.878290966152363,
+          "maximum": 27.048967620494867
+        },
+        "smoothing_displacement_m": {
+          "count": 126,
+          "median": 0.05797793925209213,
+          "p90": 0.29160648038531034,
+          "maximum": 0.46559375901708466
+        }
+      },
+      "smoothing_error_change": {
+        "paired_count": 126,
+        "worsened_count": 35,
+        "improved_count": 57,
+        "unchanged_count": 34,
+        "maximum_worsening_m": 0.34496656727924685,
+        "delta_m": {
+          "count": 126,
+          "median": 0.0,
+          "p90": 0.08245810939889207,
+          "maximum": 0.34496656727924685
+        }
+      },
+      "original_metric_gaps": {
+        "intervals": 36,
+        "missing_frames": 711
+      },
+      "gaps_filled": 0,
+      "smoothing_rejected_observations": 895,
+      "sampled_observations": 899,
+      "input_sha256": {
+        "source": "5fb7c399a834752d043dbc48548b773feb01b57c65b3bcdbdfdbac1f273c7e7b",
+        "tracking_jsonl": "d1e5a022903392ff767f23d354d0fd5cc2df7f552bf64e26b9132d0bc77dd7ac",
+        "tracking_summary": "b4a0d4bdd8ee74e6694382d82b8922faa33f714f3424865424ee093c8324bd63",
+        "camera_jsonl": "cb94843321d13ac5be69ed55be57521d0d44c5d3df9ac1bbeddbc1f4d2759fd0",
+        "camera_summary": "0ab6f7efdbd760c90599277249a5140671a132f207ff3ad1921a1b05c69123dd",
+        "camera_video": "4a450f10e5319d1678f4ea3e5c11706651c181c519aedcaaa81f01f5df46b642"
+      }
+    }
+  ]
+}

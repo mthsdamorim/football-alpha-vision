@@ -1,0 +1,25 @@
+[project]
+name = "football-alpha-player-detection"
+version = "0.1.0"
+description = "Project-owned person detection contracts for football-alpha."
+requires-python = ">=3.13"
+dependencies = [
+    "av>=18.1.0,<19.0.0",
+    "football-alpha-video",
+    "pillow>=12.0.0,<13.0.0",
+    "rfdetr>=1.9.4,<2.0.0",
+    "torch>=2.2.0,<3.0.0",
+    "torchvision>=0.17.0,<1.0.0",
+]
+
+[project.scripts]
+football-alpha-person-detection = "football_alpha_player_detection.cli:main"
+
+[tool.uv.sources]
+football-alpha-video = { workspace = true }
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"

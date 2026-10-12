@@ -1,0 +1,22 @@
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.DS_Store
+.env
+
+# Project data, broadcast videos, model weights and local experiment outputs stay
+# outside version control. See data/README.md for how to obtain the inputs.
+data/*
+!data/README.md
+artifacts/
+*.pth
+*.pt
+

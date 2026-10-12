@@ -1,0 +1,17 @@
+[project]
+name = "football-alpha-pitch-projection"
+version = "0.1.0"
+description = "Abstention-aware image-to-pitch geometry for football-alpha."
+requires-python = ">=3.13"
+dependencies = [
+    "football-alpha-video",
+    "numpy>=2.3.0",
+    "opencv-python-headless>=4.8.0,<5.0.0",
+]
+
+[tool.uv.sources]
+football-alpha-video = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"

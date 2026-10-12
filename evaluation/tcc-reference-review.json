@@ -1,0 +1,29 @@
+{
+  "schema": "tcc-reference-human-review/v1",
+  "issue": 18,
+  "review_date": "2026-09-26",
+  "reviewer": "Matheus de Amorim",
+  "prior_exposure_to_scenes_or_annotations": false,
+  "source": "reviewer_confirmation_by_author",
+  "protocol_sha256": "42a3dc72067ce754c847afd410faaa9f6e10adc849806ccf1c83eaf399165c64",
+  "reference_sha256": "0ac41da846eaa13e4971e7170c88de4fb73b1e3067c12e20485b3fb6dd43df33",
+  "reviewed_frames_per_clip": [251, 276, 301, 326, 351, 376, 401, 426, 451, 476],
+  "clips_reviewed": ["SNGS-116", "SNGS-132", "SNGS-187"],
+  "reviewed_frame_count": 30,
+  "person_boxes_local_ids_and_field_lines": "reviewed_no_corrections_reported",
+  "visible_unlabeled_people_or_ignore_corrections": "none_reported",
+  "disagreements": [],
+  "image_edge_truncated_supports_in_review_frames": [
+    {"clip": "SNGS-116", "frame": 476, "track_id": 16},
+    {"clip": "SNGS-132", "frame": 251, "track_id": 18},
+    {"clip": "SNGS-132", "frame": 276, "track_id": 18},
+    {"clip": "SNGS-132", "frame": 301, "track_id": 18},
+    {"clip": "SNGS-132", "frame": 326, "track_id": 18},
+    {"clip": "SNGS-132", "frame": 351, "track_id": 18},
+    {"clip": "SNGS-132", "frame": 376, "track_id": 18}
+  ],
+  "foot_support_visibility_and_uncertainty": "all_yellow_supports_in_reviewed_frames_checked_no_additional_exceptions",
+  "support_uncertainty": "bbox_bottom_proxy_not_numerically_calibrated",
+  "unreviewed_frames_support_status": "not_qualified",
+  "metric_reference_release": "reviewed_frame_subset_only_for_descriptive_gsr_agreement"
+}
